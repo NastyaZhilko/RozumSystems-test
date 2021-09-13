@@ -1,0 +1,2 @@
+export const getFilteredWorklog = (state, id)=> state.worklog.worklog.filter(w => w.employee_id === id)
+export const getSortedEmployees = (state)=> state.employees.employees.sort(((a, b) => a.lastName > b.lastName ? 1 : -1))
